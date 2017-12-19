@@ -1,7 +1,7 @@
 import {Id} from './id';
 
 export interface Board {
-  id: Id;
+  id: string;
   boardId: number;
   boardName: string;
 }

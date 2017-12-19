@@ -1,3 +1,14 @@
+
+<label>
+  <input #searchBox (keyup)="search(searchBox.value)"/>
+</label>
+<h2>Search Items: </h2>
+<ul>
+  <li *ngFor="let board of searchResults$ | async">
+    {{board.boardName}}
+  </li>
+</ul>
+
 <h2>Latest Records: </h2>
 <ul>
   <li *ngFor="let board of latestBoards">
