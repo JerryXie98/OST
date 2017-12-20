@@ -1,0 +1,11 @@
+<form class="search-form">
+  <mat-form-field class="full-width">
+    <input #searchBox (keyup)="search(searchBox.value)" matInput placeholder="Search Name">
+  </mat-form-field>
+</form>
+
+<mat-list>
+  <mat-list-item *ngFor="let student of searchResults$ | async">
+    {{student.surname}}
+  </mat-list-item>
+</mat-list>
