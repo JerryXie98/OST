@@ -11,6 +11,7 @@ import {
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {StudentService} from '../Services/student.service';
+import {FileService} from '../Services/file.service';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,6 @@ import {StudentService} from '../Services/student.service';
     MatGridListModule,
     MatListModule
   ],
-  providers: [StudentService],
+  providers: [StudentService, FileService],
 })
 export class StudentModule { }

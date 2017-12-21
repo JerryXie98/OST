@@ -9,3 +9,11 @@
     {{student.surname}}
   </mat-list-item>
 </mat-list>
+
+<input #fileInput type="file" multiple />
+<button mat-button (click)="uploadFile()">Upload Files!</button>
+<br>
+<br>
+<input #downloadId matInput placeholder="Object Id"/>
+<button mat-button (click)="downloadFile(downloadId.value)">Download File!</button>
+
